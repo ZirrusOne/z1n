@@ -1,0 +1,430 @@
+
+  a.btn-filter {
+    padding: 5px 30px;
+    display: block;
+    background: var(--color-gray);
+    border: 1px solid var(--color-orange);
+    border-radius: 20px;
+    color: var(--color-title);
+  }
+
+  .status-in-progress {
+    background-color: var(--color-in-progress);
+    border-color: var(--color-in-progress);
+    color: black;
+  }
+
+  .status-resolve-ready {
+    background-color: var(--color-resolve-ready);
+    border-color: var(--color-resolve-ready);
+    color: black;
+  }
+
+  .status-non-compliant {
+    background-color: var(--color-non-compliant);
+    border-color: var(--color-non-compliant);
+    color: white;
+  }
+
+  .status-escalate {
+    background-color: var(--color-escalate);
+    border-color: var(--color-escalate);
+    color: white;
+  }
+
+  .status-ready {
+    background-color: var(--color-ready);
+    border-color: var(--color-ready);
+    color: white;
+  }
+
+  .status-resolved {
+    background-color: var(--color-resolved);
+    border-color: var(--color-resolved);
+    color: black;
+  }
+
+  .status-completed {
+    background-color: var(--color-complete);
+    border-color: var(--color-complete);
+    color: white;
+  }
+
+  .border-red {
+    border-color: var(--color-border-red);
+  }
+
+  .inactive-border {
+    border-color: var(--color-diver);
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  #body, #page-job-management, #page-job-detail {
+    height: 100%
+  }
+
+  #page-job-management, #page-job-detail {
+    .page-head {
+      position: sticky;
+      margin-bottom: 0;
+    }
+  }
+
+  .check-slider {
+    width: 60px;
+    /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      right: 0;
+      top: 0px;
+      display: flex;
+      align-items: flex-start;
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+      display: none;
+    }
+
+    /* The slider */
+    .slider {
+      position: relative;
+      cursor: pointer;
+      border-radius: 34px;
+      background-color: var(--color-switch-button);
+      -webkit-transition: .4s;
+      transition: .4s;
+      width: 50px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .slider-text {
+      padding-top: 3px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      border-radius: 50%;
+      bottom: 3px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: var(--color-green-light);
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px var(--color-green-light);
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+  }
+
+  .filter-modal {
+    &.all-filter-modal {
+      .all-filter-modal-wrapper {
+        padding: 10px;
+
+        .filter-content {
+          margin-bottom: 10px;
+          display: block;
+          max-height: 145px;
+        }
+      }
+    }
+
+    .modal-title {
+      color: var(--color-title);
+      text-transform: uppercase;
+    }
+
+    button.close {
+      color: var(--color-green-light);
+      opacity: 1;
+      border-radius: 65px;
+      padding: 3px 6px;
+      margin-top: 0;
+      margin-right: 0;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .modal-dialog {
+      margin-top: 25px !important;
+    }
+
+    .modal-content {
+      background-color: black;
+      border-radius: 8px;
+      max-height: calc(var(--vh) - 50px);
+      overflow: auto;
+
+      .modal-header {
+        border-bottom: none;
+        padding: 10px 10px 0;
+      }
+
+      .modal-body {
+        padding: 10px;
+      }
+    }
+
+    .filter-modal-wrapper {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+
+      .filter-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .header-title {
+          color: var(--color-orange);
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+
+        .fa {
+          font-size: 20px;
+        }
+
+        @media screen and (max-width: 540px) {
+          margin-bottom: 10px;
+        }
+      }
+
+      .filter-content {
+        display: flex;
+        flex-direction: column;
+
+        textarea.input-comment {
+          min-height: 100px;
+          border: 1px solid var(--color-gray);
+          border-radius: 8px;
+          padding: 5px 10px;
+          background: white;
+          color: black;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .team-item {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 15px;
+          display: flex;
+          height: 35px;
+          justify-content: center;
+          align-items: center;
+          color: var(--color-diver);
+          font-weight: 700;
+          border-radius: 8px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          &.active {
+            background: black;
+            color: var(--color-title);
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &.filter-for-detail {
+      .team-item {
+        color: var(--background-gray) !important;
+
+        &.active {
+          color: var(--color-title-active) !important;
+        }
+      }
+    }
+  }
+
+  .filter-modal.custom-file-upload {
+    .file-upload-wrapper {
+      background: var(--color-gray);
+      padding: 20px;
+      border-radius: 8px;
+
+      .filter-modal-wrapper {
+        background: transparent;
+        padding: 0;
+
+        .header-title {
+          color: var(--color-title);
+        }
+
+        .file-uploader {
+          min-height: 90px;
+          max-height: 200px;
+          overflow: auto;
+
+          .file-upload-area {
+            background: transparent;
+            border: none;
+            min-height: unset;
+
+            .text-center {
+              display: none;
+
+              &.mt-2 {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .btn-file-upload {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  margin-left: 10px;
+                  margin-right: 10px;
+
+                  i.fa {
+                    color: var(--color-upload-photo);
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                  }
+
+                  .mt-1 {
+                    color: white;
+                    font-size: 16px;
+                  }
+
+                  &:focus {
+                    outline: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .file-preview-area {
+            .file-preview {
+              padding-left: 0;
+              padding-right: 0;
+
+              .file-icon {
+                height: 60px;
+                width: 60px;
+              }
+            }
+
+            .flex.align-center {
+              position: absolute;
+              top: -999999px;
+              left: -999999px;
+            }
+
+            .ml-2.btn-reset {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .filter-modal-action {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .z1n-field-crew {
+    #page-user-profile {
+      .page-head-content {
+        // Hide the "Switch User" button
+        .page-actions {
+          display: none;
+        }
+      }
+
+      .leaderboard-link {
+        display: none;
+      }
+    }
+
+    #page-User {
+      .form-assignments {
+        // !important to override the style attribute which is added by an unknown script!
+        display: none !important;
+      }
+    }
+  }
+
+  .lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+}
+
+
