@@ -46,6 +46,10 @@ font-family: var(--base-font);
         background-color: var(--bg-color);
     }
 
+    .app-logo {
+        width: 48px;
+    }
+
     .form-links .document-link .btn-new:hover {
         background: var(--color-complete);
 
