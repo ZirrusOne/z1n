@@ -14,7 +14,7 @@ website_context = {
     "splash_image": "/assets/z1n/images/z1n-logo.png"
 }
 
-after_migrate = ["install_manager.after_migrate.install.execute"]
+after_migrate = ["z1n.after_migrate.install.execute"]
 
 # include js, css files in header of desk.html
 app_include_css = "/assets/z1n/css/z1n.css"
