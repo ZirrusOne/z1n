@@ -90,7 +90,7 @@ function hideMenus() {
     standardSideBarWrapper.css('display', 'none');
 
     frappe.call({
-        method: 'z1n.doctype.workspace_menus.get_visible_menus',
+        method: 'z1n.z1n.doctype.workspace_menus.get_visible_menus',
         args: {},
         type: 'GET',
         callback: function (result) {
