@@ -24,3 +24,7 @@ web_include_css = "/assets/css/z1n_website.css"
 
 # include custom scss in every website theme (without file extension ".scss")
 website_theme_scss = "z1n/public/scss/website"
+
+fixtures = [
+    {"dt": "Workspace Menus"}
+]
