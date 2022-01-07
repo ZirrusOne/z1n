@@ -15,6 +15,7 @@ website_context = {
 }
 
 after_migrate = ["z1n.after_migrate.install.execute"]
+home_page = "login"
 
 # include js, css files in header of desk.html
 app_include_css = "/assets/z1n/css/z1n.css"
