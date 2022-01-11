@@ -9,6 +9,8 @@ app_color = "blue"
 app_email = "z1n@zirrusone.com"
 app_license = "MIT"
 
+setup_wizard_requires = "/assets/z1n/js/setup_wizard.js"
+
 website_context = {
     "favicon": "/assets/z1n/images/z1n-favicon.png",
     "splash_image": "/assets/z1n/images/z1n-logo.png"
