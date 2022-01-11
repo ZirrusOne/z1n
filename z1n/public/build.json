@@ -7,12 +7,12 @@
       "public/css/z1n_website.scss"
     ],
     "js/z1n.js": [
-      "public/js/z1n_theme.js",
+      "public/js/z1n_custom_theme.js",
       "public/js/z1n_user_toolbar.js",
       "public/js/z1n_sidenav_modules.js"
     ],
     "js/z1n_website.js": [
-      "public/js/z1n_theme.js",
-      "public/js/z1n_website.js"
+      "public/js/z1n_custom_theme.js",
+      "public/js/z1n_custom_website.js"
     ]
   }
