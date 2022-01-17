@@ -24,6 +24,9 @@ app_include_css = "/assets/z1n/css/z1n.css"
 
 web_include_css = "/assets/css/z1n_website.css"
 
+domains = {
+        'Z1N': 'z1n.domains.z1n'
+}
 
 # include custom scss in every website theme (without file extension ".scss")
 website_theme_scss = "z1n/public/scss/website"
